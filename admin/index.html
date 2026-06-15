@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard | Emran Portfolio</title>
+    <title>Admin Login | Emran Portfolio</title>
     <link href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" rel="stylesheet" />
-  </head>
-  <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
     <script>
-      // এটি আপনার গিটহাব রিপোজিটরির সাথে CMS-কে কানেক্ট করবে
-      CMS.init();
+        // ইউজারনেম ও পাসওয়ার্ড
+        const username = "emran"; 
+        const password = "123";   
+
+        // লগইন প্রম্পট
+        let inputUser = prompt("Enter Username:");
+        let inputPass = prompt("Enter Password:");
+
+        if (inputUser === username && inputPass === password) {
+            // সঠিক পাসওয়ার্ড হলে CMS স্ক্রিপ্ট লোড হবে
+            const script = document.createElement("script");
+            script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+            document.body.appendChild(script);
+        } else {
+            alert("Access Denied! Redirecting to Home.");
+            window.location.href = "/"; // ভুল হলে মেইন সাইটে পাঠিয়ে দেবে
+        }
     </script>
-  </body>
+</body>
 </html>
