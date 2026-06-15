@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Emran Bin Habib | Journalist Portfolio</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #0d1117; color: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0; padding: 0; line-height: 1.6;
+        }
+        
+        /* মেনুবার */
+        nav {
+            background-color: #161b22; position: fixed; top: 0; width: 100%;
+            padding: 15px 0; text-align: center; border-bottom: 1px solid #30363d; z-index: 1000;
+        }
+        nav a {
+            color: #c9d1d9; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; transition: color 0.3s;
+        }
+        nav a:hover { color: #58a6ff; }
+
+        /* সেকশন লেআউট */
+        section {
+            padding: 100px 20px 60px; min-height: 75vh; max-width: 900px; margin: 0 auto;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        h1 { color: #58a6ff; font-size: 2.8rem; margin-bottom: 10px; }
+        h2 { color: #58a6ff; font-size: 2.2rem; border-bottom: 2px solid #30363d; padding-bottom: 10px; margin-bottom: 30px; }
+        p { font-size: 1.1rem; color: #8b949e; }
+
+        /* গ্রিড সিস্টেম */
+        .grid-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;
+        }
+        .card {
+            background: #161b22; padding: 20px; border-radius: 10px; border: 1px solid #30363d; text-align: left;
+        }
+        .card h3 { margin-top: 0; color: #ffffff; }
+        
+        .btn {
+            display: inline-block; margin-top: 20px; padding: 10px 25px; background-color: #238636;
+            color: white; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center;
+        }
+        .btn:hover { background-color: #2ea043; }
+        
+        .profile-img-placeholder {
+            width: 150px; height: 150px; background-color: #30363d; border-radius: 50%;
+            margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: #8b949e; font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <section id="home" style="text-align: center;">
+        <div class="profile-img-placeholder">Photo</div>
+        <h1>Al Emran Bin Habib</h1>
+        <p style="font-size: 1.5rem; color: #c9d1d9; margin-top: 0;">Journalist | Storyteller | Media Enthusiast</p>
+        <p>Uncovering the truth and telling stories that impact society.</p>
+        <a href="mailto:emran@example.com" class="btn" style="width: fit-content; margin: 20px auto 0;">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Al Emran Bin Habib, currently studying in the Department of Journalism, Media and Communication at Daffodil International University.</p>
+        <p>I have a deep passion for factual reporting, investigative journalism, and modern digital media. My goal is to build a strong career in media by exploring objective truth and presenting stories clearly to the audience.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements & Works</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Founder & Editor</h3>
+                <p><strong>JournalLens</strong></p>
+                <p>Successfully initiated and managing an online media platform focused on objective campus and community reporting.</p>
+            </div>
+            <div class="card">
+                <h3>Media Projects</h3>
+                <p><strong>Daffodil International University</strong></p>
+                <p>Conducted multiple video and text-based reporting assignments as part of the academic curriculum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog & Op-Eds</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>The Era of Mobile Journalism (MoJo)</h3>
+                <p>How smartphones are changing the dynamics of instant ground reporting...</p>
+                <a href="#" style="color: #58a6ff; text-decoration: none;">Read Article →</a>
+            </div>
+            <div class="card">
+                <h3>Ethics in the Age of Clickbait</h3>
+                <p>A look into maintaining media integrity versus the rush for digital views...</p>
+                <a href="#" style="color: #58a6ff; text-decoration: none;">Read Article →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Photojournalism Gallery</h2>
+        <p>Capturing stories through the camera lens.</p>
+        <div class="grid-container">
+            <div class="card" style="text-align: center; padding: 50px 20px; background: #21262d;">Field Photo 1</div>
+            <div class="card" style="text-align: center; padding: 50px 20px; background: #21262d;">Field Photo 2</div>
+            <div class="card" style="text-align: center; padding: 50px 20px; background: #21262d;">Field Photo 3</div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 30px; border-top: 1px solid #30363d; margin-top: 40px; color: #8b949e;">
+        <p>© 2026 Al Emran Bin Habib. Powered by HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
